@@ -1,0 +1,10 @@
+<h1>Comments :</h1>
+
+
+<% @comments.each do |comment| %>
+    <h2>content : <%= comment.content %></h2>
+    
+    <p>
+    <a href="<%= comment_path(comment.id) %>" class="btn btn-primary">Show more</a>
+    </p>
+<% end %>

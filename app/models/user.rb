@@ -1,2 +1,3 @@
-class CreateUser < ApplicationRecord
+class User < ApplicationRecord
+  
 end

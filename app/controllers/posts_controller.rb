@@ -31,9 +31,11 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(post_params)
         if @post.save
-        redirect_to posts_path
+            redirect_to posts_path
         else
-        render "new"
+            render "new"
+            redirect_to @post_path, danger: "Invalid gossip ! Missing an argument."
+            
         end
     end
 

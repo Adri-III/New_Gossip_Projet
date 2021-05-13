@@ -6,5 +6,6 @@ class CreatePostsTable < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    #add_reference :posts, :user, foreign_key: true
   end
 end
